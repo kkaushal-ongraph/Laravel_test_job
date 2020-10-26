@@ -20,6 +20,7 @@
     ```
         mysql -V        //terminal use
     ```
+4. Composer and GIT
 
 
 # Setup:
@@ -29,7 +30,8 @@
         composer install        //terminal use
     ```
 3. Create Database(Name as your choice).
-4. Add Database Information to project .env file
+4. Copy .env.example to .env on project root folder
+5. Add Database Information to project .env file
     ```
         Path : project folder -> .env
 
@@ -37,19 +39,19 @@
         DB_USERNAME=root        //your mysql username
         DB_PASSWORD=root        //your mysql password(Leave blank if not)
     ```
-5. Assign permission to storage folder.
+6. Assign permission to storage folder.
     ```
         sudo chmod -R 777 storage/      //terminal use
     ```
-6. Run migration
+7. Run migration
     ```
         sudo php artisan migrate        //terminal use
     ```
-7. For testing add fake data to table, this will create 10 record for testing
+8. For testing add fake data to table, this will create 10 record for testing
     ```
         php artisan db:seed --class=ItemSeeder      //terminal use
     ```
-8. Access your page by
+9. Access your page by
     ```
         http://localhost/projectname/public/
     ```
